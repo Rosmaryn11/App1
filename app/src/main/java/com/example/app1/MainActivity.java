@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.graphics.Color;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,4 +21,11 @@ public class MainActivity extends AppCompatActivity {
         TextView tv = (TextView)findViewById(R.id.MainTextView);
         tv.setText("New Text");
     }
+
+    // Method to change the TextView text color
+    public void btnChangeColorClick(View v){
+        TextView tv = (TextView)findViewById(R.id.MainTextView);
+        tv.setTextColor(Color.parseColor("#7b7cf8"));
+    }
+
 }
